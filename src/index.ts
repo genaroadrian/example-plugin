@@ -1,8 +1,8 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { EyenetNetworkInfo } from './definitions';
+import type { EyenetNetworkInfoPlugin } from './definitions';
 
-const EyenetNetworkInfo = registerPlugin<EyenetNetworkInfo>(
+const EyenetNetworkInfo = registerPlugin<EyenetNetworkInfoPlugin>(
   'EyenetNetworkInfo',
   {
     web: () => import('./web').then(m => new m.EyenetNetworkInfoWeb()),

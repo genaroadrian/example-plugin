@@ -1,10 +1,10 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { EyenetNetworkInfo } from './definitions';
+import type { EyenetNetworkInfoPlugin } from './definitions';
 
 export class EyenetNetworkInfoWeb
   extends WebPlugin
-  implements EyenetNetworkInfo
+  implements EyenetNetworkInfoPlugin
 {
   async echo(): Promise<{ value: string }> {
     console.log('ECHO', '');
