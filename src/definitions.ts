@@ -1,3 +1,3 @@
-export interface EyenetNetworkInfoPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+export interface EyenetNetworkInfo {
+  echo(): Promise<{ value: string }>;
 }

@@ -15,9 +15,9 @@ public class EyenetNetworkInfoPlugin: CAPPlugin, CAPBridgedPlugin {
     private let implementation = EyenetNetworkInfo()
 
     @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
+       
         call.resolve([
-            "value": implementation.echo(value)
+            "network": "example"
         ])
     }
 }

@@ -13,10 +13,7 @@ public class EyenetNetworkInfoPlugin extends Plugin {
 
     @PluginMethod
     public void echo(PluginCall call) {
-        String value = call.getString("value");
-
-        JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
+        ret.put("network", implementation.getNetworkInfo());
         call.resolve(ret);
     }
 }
